@@ -13,7 +13,7 @@ import { AlbumService } from '../album.service';
 export class MarketplaceComponent implements OnInit {
   albums: Album[];
 
-  constructor (private router: Router, private albumService: AlbumService){}
+  constructor (private router: Router, private albumService: AlbumService) {}
 
   ngOnInit() {
     this.albums = this.albumService.getAlbums();
